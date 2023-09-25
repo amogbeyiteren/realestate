@@ -1,0 +1,80 @@
+.property-form-wrapper {
+    background-color: white;
+    margin-block-start: -100px;
+    width: calc(100% - 10px);
+    margin-inline: auto;
+    overflow: hidden;
+    
+  }
+  .property-form-wrapper {
+    max-width: 600px;
+    margin-inline: auto;
+    background-color: unset;
+  }
+  
+
+.form-tab {
+    padding: 16px;
+    border-block-end: 1px solid var(--gainsboro);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tab-btn {
+    padding: 12px 24px;
+    color: var(--oxford-blue);
+    font-weight: var(--fw-500);
+    border-radius: var(--radius-6);
+    transition: var(--transition);
+  }
+  
+  .tab-btn:is(:hover, :focus) { color: var(--green-pigment); }
+  
+  .tab-btn.active {
+    color: var(--white);
+    background-color: var(--green-pigment);
+  }
+  
+  .property-form {
+    display: grid;
+    gap: 25px;
+    padding: 25px;
+  }
+  
+  .property-form .input-wrapper { position: relative; }
+  
+  .property-form :is(.input-label, .input-field) { color: var(--oxford-blue); }
+  
+  .property-form .input-label {
+    font-weight: var(--fw-500);
+    margin-block-end: 10px;
+  }
+  
+  .property-form :is(.input-field, .dropdown-list) {
+    min-height: 40px;
+    border: 1px solid var(--gainsboro);
+    border-radius: var(--radius-4);
+    outline: none;
+    transition: var(--transition);
+  }
+  
+  .property-form :is(.input-field, .dropdown-list):focus { border-color: var(--green-pigment); }
+  
+  .property-form .input-wrapper ion-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(20%);
+    left: 15px;
+    color: var(--oxford-blue);
+    --ionicon-stroke-width: 40px;
+  }
+  
+  .property-form .input-field { padding-inline: 45px 15px; }
+  
+  .property-form .input-field::placeholder { color: var(--manatee); }
+  
+  .property-form .dropdown-list { padding-inline: 15px; }
+  
+  .property-form .btn { max-width: 100%; }
+  
+  
